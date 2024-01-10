@@ -1,0 +1,12 @@
+Flask
+Flask-Cors
+types-Flask-Cors
+opencv-python
+Pillow
+types-Pillow
+matplotlib
+numpy
+Werkzeug
+transformers
+timm
+torch

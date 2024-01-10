@@ -1,0 +1,169 @@
+.App {
+  text-align: center;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #121212;
+  color: #fff;
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.video-input-label {
+  font-size: 1rem;
+  font-weight: bold;
+  grid-column: 1 / span 2;
+}
+
+.video-input {
+  width: 100%;
+}
+
+.analyze-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.license-plate-marker:hover::before {
+  content: attr(title);
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  top: -25px;
+  left: -10px;
+  white-space: nowrap;
+  z-index: 11;
+}
+
+.analyze-button:hover {
+  background-color: #0056b3;
+}
+
+.loading-indicator {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.video-container {
+  margin-bottom: 2rem;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.timeline-container {
+  position: relative;
+}
+
+.timeline {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.object-marker {
+  position: absolute;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.color-legend {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.react-player {
+  margin-bottom: 1rem;
+}
+
+.timeline-image,
+.object-detection-image {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+.current-time-marker {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #ff0000;
+  transform: translateX(-50%);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.tab {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab.active {
+  background-color: #007bff;
+}
+
+.tab:hover {
+  background-color: #0056b3;
+}
+
+.video-overlay {
+  position: relative;
+}
+
+.object-box {
+  position: absolute;
+  border: 2px solid red;
+  box-sizing: border-box;
+  z-index: 2;
+}
